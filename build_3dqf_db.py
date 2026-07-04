@@ -32,6 +32,8 @@ MATERIAL = {
 # 3DQF Woodchucker (PLA wood-filled) TDS. Applied to the wood-filled group.
 WOOD = dict(density=1.05, extruder_temp_range=[165, 190], bed_temp_range=[50, 60])
 WOOD_RE = re.compile(r"woodchucker|wine\s*stopper|(?:wood|cork)\s*filled", re.I)
+# Products that aren't a single sellable filament colour (bundles/offers).
+EXCLUDE_RE = re.compile(r"special\s*offer", re.I)
 
 WEIGHT_RE = re.compile(r"(\d+(?:\.\d+)?)\s*kg", re.I)
 
@@ -122,6 +124,8 @@ def main():
     groups = collections.OrderedDict()  # (mat, diam_tuple, weight_tuple) -> [colors]
     for p in cat["products"]:
         if not (set(p.get("categoryIds", [])) & filament_ids):
+            continue
+        if EXCLUDE_RE.search(p["name"]):
             continue
         mat = material_of(p)
         if mat not in MATERIAL:

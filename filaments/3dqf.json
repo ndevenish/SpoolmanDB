@@ -111,32 +111,6 @@
                     "weight": 1000,
                     "spool_type": "cardboard",
                     "spool_weight": 55
-                }
-            ],
-            "diameters": [
-                1.75
-            ],
-            "extruder_temp_range": [
-                230,
-                240
-            ],
-            "bed_temp": 100,
-            "colors": [
-                {
-                    "name": "Power Tool Special Offer",
-                    "hex": "9e7d38"
-                }
-            ]
-        },
-        {
-            "name": "{color_name}",
-            "material": "ASA",
-            "density": 1.05,
-            "weights": [
-                {
-                    "weight": 1000,
-                    "spool_type": "cardboard",
-                    "spool_weight": 55
                 },
                 {
                     "weight": 4100
