@@ -40,8 +40,10 @@ catalog has no colours in it.
 - **Density / temperatures** are transcribed from 3DQF's own TDS sheets at
   <https://www.3dqf.co.uk/material-profiles> (see `MATERIAL`/`WOOD` in
   `build_3dqf_db.py`). ASA has no full TDS; it uses 3DQF's stated print settings.
-- **Spools** are cardboard; the standard 1.75 mm 1 kg roll is given
-  `spool_weight: 55` (larger rolls use bigger spools we haven't weighed).
+- **Spools** — the standard 1 kg roll is a known cardboard spool
+  (`spool_type: cardboard`), and the 1.75 mm 1 kg roll is given
+  `spool_weight: 55`. Larger rolls use spools we haven't identified, so their
+  `spool_type`/`spool_weight` are left unset.
 - **Special cases** (`SPECIAL` in `build_3dqf_db.py`): Naked/Glass →
   `translucent`, Light Stone Effect → `pattern: marble`, Universe Black →
   `pattern: sparkle`, Pearl/Regal "(… shimmer)" → `finish: glossy`. Wood-filled

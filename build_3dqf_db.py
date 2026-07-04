@@ -155,9 +155,14 @@ def main():
         only_175 = d == (1.75,)
         weight_objs = []
         for x in w:
-            obj = {"weight": x, "spool_type": "cardboard"}
-            if only_175 and x == 1000:
-                obj["spool_weight"] = 55
+            obj = {"weight": x}
+            # Only the standard 1kg roll is a known cardboard spool (~55g on the
+            # 1.75mm-only spool). Larger rolls use spools we haven't identified,
+            # so leave their spool_type/spool_weight unset.
+            if x == 1000:
+                obj["spool_type"] = "cardboard"
+                if only_175:
+                    obj["spool_weight"] = 55
             weight_objs.append(obj)
         obj = {
             # Material is already its own field, so the name is just the colour

@@ -77,8 +77,7 @@
                     "spool_weight": 55
                 },
                 {
-                    "weight": 4100,
-                    "spool_type": "cardboard"
+                    "weight": 4100
                 }
             ],
             "diameters": [
@@ -140,8 +139,7 @@
                     "spool_weight": 55
                 },
                 {
-                    "weight": 4100,
-                    "spool_type": "cardboard"
+                    "weight": 4100
                 }
             ],
             "diameters": [
@@ -243,8 +241,7 @@
                     "spool_weight": 55
                 },
                 {
-                    "weight": 2600,
-                    "spool_type": "cardboard"
+                    "weight": 2600
                 }
             ],
             "diameters": [
@@ -280,12 +277,10 @@
                     "spool_weight": 55
                 },
                 {
-                    "weight": 2600,
-                    "spool_type": "cardboard"
+                    "weight": 2600
                 },
                 {
-                    "weight": 4600,
-                    "spool_type": "cardboard"
+                    "weight": 4600
                 }
             ],
             "diameters": [
@@ -539,8 +534,7 @@
                     "spool_weight": 55
                 },
                 {
-                    "weight": 2000,
-                    "spool_type": "cardboard"
+                    "weight": 2000
                 }
             ],
             "diameters": [
@@ -572,16 +566,13 @@
                     "spool_weight": 55
                 },
                 {
-                    "weight": 2000,
-                    "spool_type": "cardboard"
+                    "weight": 2000
                 },
                 {
-                    "weight": 3000,
-                    "spool_type": "cardboard"
+                    "weight": 3000
                 },
                 {
-                    "weight": 4500,
-                    "spool_type": "cardboard"
+                    "weight": 4500
                 }
             ],
             "diameters": [
@@ -653,16 +644,13 @@
                     "spool_type": "cardboard"
                 },
                 {
-                    "weight": 2000,
-                    "spool_type": "cardboard"
+                    "weight": 2000
                 },
                 {
-                    "weight": 3000,
-                    "spool_type": "cardboard"
+                    "weight": 3000
                 },
                 {
-                    "weight": 4500,
-                    "spool_type": "cardboard"
+                    "weight": 4500
                 }
             ],
             "diameters": [
